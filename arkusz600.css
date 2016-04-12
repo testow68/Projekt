@@ -1,0 +1,552 @@
+
+body 
+{
+    height:100%;   
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: 'LocalOswald', sans-serif;
+    color: #112;
+
+
+}
+input
+{
+	font-family: 'LocalOswald', sans-serif;
+	cursor: pointer;
+
+}
+
+textarea 
+{ 
+	border: none; 
+	background-color: #D3D3D3;
+	max-width: 300px;
+}
+
+@font-face
+{
+    font-family: LocalOswald;
+    src: url('Oswald-Regular.ttf');
+        
+}
+
+
+a 
+{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+ /* wygląd głównego elementu - ol */
+      ol {
+        list-style-type:none;
+        padding:0;
+        display: block;
+ 		margin: 0 auto;
+        background-color:white;
+        color: black;
+        font-size:14px;
+        height:2em;
+        line-height:2em;
+        text-align:center;
+        min-width: 200px;
+        max-width: 3000px;
+        float: center;
+
+      }
+
+      /* wygląd wszystkich elementów - a - znajdujących się w elemencie - ol */
+      ol a {
+        display:block;
+        text-decoration:none;
+        color: #000;
+        padding:0 5px;
+        float: center;
+        
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol */
+      ol > li {
+        float:center;
+        width:100%;
+
+        background-color:#BBCDDD;
+        height:2em;
+      }
+
+      /* wygląd elementu - li - pierwszego dziecka elementu - ol */
+      ol > li:first-child {
+        margin-left:0;
+      }
+
+      /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover {
+        background-color:#CCFFFF;
+        border-bottom: solid 3px #c0392b;
+
+      }
+
+      /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > a {
+        color:#334499;
+        border-bottom: solid 3px #c0392b;
+      }
+
+      /* wygląd elementu - ul - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
+      ol > li:hover > ul {
+        display:block;
+       
+      }
+
+      /* ------------------------CZĘŚĆ-ROZWIJANA-MENU------------------------ */
+
+      /* wygląd głównych rozwijanych elementów - ul */
+      ol > li > ul {
+        display:none;
+        list-style-type:none;
+        padding:0;
+        margin:0;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej */
+      ol > li > ul > li {
+        position:relative;
+        background-color:#BBEEEE;
+
+      }
+
+      /* wygląd elementu - a - w części rozwijanej */
+      ol > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      /* wygląd elementu - li - w części rozwijanej, po najechaniu kursorem myszki na dany element - li */
+      ol > li > ul > li:hover {
+        background-color:#AADDDD;
+       
+      }
+
+      /* wygląd elementu - a - w części rozwijanej, po najechaniu kursorem myszki na element - li */
+      ol > li > ul > li:hover > a {
+        color:#334499;
+       
+      }
+  
+
+#full
+{
+	background-color: #336699;
+	height: 90px;
+	max-height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+header
+{
+	width: 200px;
+	font-size: 35px;
+	background-color: #336699;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+
+	padding: 0px;
+	min-width: 200px;
+	
+	display: block;
+ 	margin: 0 auto;
+
+
+
+    border:0;
+    height: 120px;
+   
+    max-width: 2920px;
+}
+
+#login
+{
+	font-size: 10px;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 0px;
+	height: 0px;
+	float: right;
+}
+#plog
+{
+	font-size: 14px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	background-color: #336699;
+}
+
+#panellog
+{
+	 display: block !important;
+	 display: none !important;
+}
+
+
+#content
+{
+	width: auto;
+	text-align: justify;
+	padding: 0px;
+	min-width: 200px;
+	
+	
+  	margin: 0 auto;
+
+    border:0;
+    padding-top: 160px;
+    padding-left: 0;
+    max-width: 2920px;
+    background-color: #F0F8FF;
+    padding-bottom: 30px;
+
+}
+
+
+#tytu
+{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	width: 150px;
+	max-width: 2000px;
+	padding-top: 5px;
+	padding-right: 5%;
+	padding-left: 5%;
+	
+}
+
+#ttlo
+{
+	background-color: #BBEEEE;
+	padding-left: 0;
+	width: 250px;
+	min-width: 150px;
+	
+}
+.comhead
+{
+	background-color: #BBEEEE;
+	min-width: 100px;
+
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	width: 50% !important;	
+}
+
+
+
+#zawa
+{
+	
+	padding-top: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 13px;
+	
+}
+.zawa
+{
+	padding-top: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-size: 13px;
+	
+
+}
+#floatbar
+{
+	background:#C0C0C0;
+	 width:170px;
+	   height:40px;
+	  position:absolute;
+	  right:10px;top:150px;
+	  opacity: 97%;
+	  line-height: 40px;
+	  text-align: center;
+	  cursor: pointer;
+	   z-index: 2;
+	   display: block;
+
+}
+
+.buttons
+{
+	width: auto;
+	text-align: justify;
+	padding: 0px;
+	min-width: 200px;
+	float: center;
+	display: block;
+  	margin: 0 auto;
+
+    border:0;
+    padding-left: 0;
+    max-width: 2920px;
+    padding-top: 0px;
+    background-color: #F0F8FF;
+    padding-bottom: 100px;
+}
+#komentos
+{
+	display: none;
+	width: 95%;
+	min-width: 200px;
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 5%;
+
+
+}
+#tak
+{
+	 z-index: 2;
+	 position: absolute !important;
+	 width: 100% !important;
+
+	 
+}
+#komentujesz
+{
+	float: center;
+	width: 200px;
+
+	
+}
+
+#skomentuj
+{
+	float: center;
+	width: auto;
+	min-width: 200px;
+
+}
+
+#toggll
+{
+	float: center;
+	width: 200px;
+	
+}
+#togglldw
+{
+	float: right;
+	margin-right: 30%;
+	display: none;
+}
+
+
+
+#walcz
+{
+	float: center;
+	color: white;
+	width: auto;
+	min-width: 200px;
+	max-width: 3000px;
+    background-color: #F0F8FF;
+    padding-bottom: 30px;
+}
+
+#trescwiadomosci
+{
+	float: center;
+	min-width: 200px;
+	max-width: 2500px;
+	width: 100%;
+
+
+}
+
+/*#pozwal
+{
+
+<div id="srodek"><br></div>
+
+margin: 0 auto;
+display: block;
+max-width: 150px;
+
+}
+#odpusc
+{
+	float: center;
+	color: white;
+}
+*/
+.btn_red
+{
+	background-color: #e74c3c;
+	width: 100px;
+	color: white;
+	height: 36px;
+	border-bottom: solid 5px #c0392b;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px;
+	font-size: 17px;
+	font-style: bold;
+	border-radius: 5px;
+}
+.btn_red:hover
+{
+	background-color: #e22c3c;
+	width: 100px;
+	color: white;
+	height: 36px;
+	border-bottom: solid 5px #c0392b;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px;
+	font-size: 17px;
+	font-style: bold;
+	cursor: pointer;
+	border-radius: 1px;
+}
+.btn_green
+{
+	background-color: #3CB371;
+	width: 200px;
+	color: white;
+	min-height: 36px;
+	border-bottom: solid 5px #2E8B57;
+	
+	text-align: center;
+	line-height: 35px;
+	font-size: 17px;
+	font-style: bold;
+	border-radius: 5px;
+	float: center;
+	margin-bottom: 50px !important;
+
+	
+}
+.btn_green:hover
+{
+	background-color: #008000;
+	width: 200px;
+	color: white;
+	min-height: 35px;
+	border-bottom: solid 5px #006400;
+	text-align: center;
+	line-height: 35px;
+	font-size: 17px;
+	font-style: bold;
+	border-radius: 1px;
+	float: center;
+
+}
+.btn_blue
+{
+	background-color: #3498db;
+	width: 200px;
+	min-width: 100px;
+	color: white;
+	height: 36px;
+	border-bottom: solid 5px #2980b9;
+	
+	text-align: center;
+	line-height: 36px;
+	font-size: 17px;
+	font-style: bold;
+	border-radius: 5px;
+}
+.btn_blue:hover
+{
+	background-color: #2388db;
+	width: 200px;
+	color: white;
+	height: 36px;
+	border-bottom: solid 5px #2980b9;
+	display: inline-block;
+	text-align: center;
+	line-height: 36px;
+	font-size: 17px;
+	font-style: bold;
+	cursor: pointer;
+	border-radius: 1px;
+}
+
+
+
+.footerelements
+{
+	padding-top: 6px;
+	color: white;
+	width: 100%;
+	min-width: 200px;
+	float: center;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: Arial;
+}
+
+.error
+{
+	color:red;
+
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+#formul{
+
+	
+	
+	min-width: 200px;
+	width: 100%;
+	display: block;
+  	margin: 0 auto;  
+    max-width: 2920px;
+    padding-top: 70px;
+    background-color: #F0F8FF;
+    padding-bottom: 30px;
+    float: center;
+
+
+}
+
+#footer
+{
+	width: 100%;
+	font-size: 10px;
+	background-color: #336699;
+	color: white;
+	text-align: center;
+	padding: 0px;
+	min-width: 200px;
+    border:0;
+    height: 130px;
+
+
+}
+
+#pozfoot
+{
+	min-width: 200px;
+	width: 100%;
+	display: block;
+  	margin: 0 auto;
+ 	max-height: 150px;
+
+}
+
